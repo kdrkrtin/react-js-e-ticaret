@@ -1,0 +1,12 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.category-list-col .list-group .list-group-item {
+  cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */
