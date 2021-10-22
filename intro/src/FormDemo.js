@@ -4,11 +4,11 @@ import { Form,Input,Button } from 'reactstrap';
 export default class FormDemo extends Component {
     state = { userName: '', city: '' }
     onChangeHandle = (event) => {
-        //this.setState({userName: event.target.value});
-        let name = event.target.name;
-        let value = event.target.value;
+        this.setState({userName: event.target.value});
+        // let name = event.target.name;
+        // let value = event.target.value;
 
-        this.setState({[name]: value});
+        // this.setState({[name]: value});
     }
     onSubmitHandle = (event) => {
         event.preventDefault();

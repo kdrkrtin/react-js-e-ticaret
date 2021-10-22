@@ -1,12 +1,117 @@
 body {
   margin: 0 !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+  overflow: hidden; }
+
+*,
+::before,
+::after {
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  outline: none !important; }
 
 img {
   height: auto;
   max-width: 100%; }
 
+a {
+  text-decoration: none !important; }
+
+li {
+  list-style: none; }
+
+.navbar .nav-item .nav-link::after {
+  display: none; }
+.navbar .nav-item .nav-link i {
+  color: #00000080; }
+.navbar .nav-item .nav-link .wd-unit {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  font-size: .7em;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c1c1c1;
+  color: #00000080; }
+
+.bg-light .nav-link a,
+.navbar-collapse .nav-link a {
+  color: rgba(0, 0, 0, 0.5); }
+
+.dropdown .dropdown-menu .dropdown-item:focus {
+  background-color: transparent !important; }
+.dropdown .dropdown-menu .dropdown-item a {
+  color: rgba(0, 0, 0, 0.5); }
+
+.dropdown-item {
+  position: relative;
+  font-size: 0.9rem; }
+  .dropdown-item .badge-success,
+  .dropdown-item .badge-danger {
+    position: absolute;
+    top: 8px; }
+  .dropdown-item .badge-success {
+    right: 5px; }
+  .dropdown-item .badge-danger {
+    left: 5px;
+    display: none; }
+  .dropdown-item:hover .badge-danger {
+    display: block; }
+
+.category-list-col .list-group .list-group-item.active {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff; }
 .category-list-col .list-group .list-group-item {
   cursor: pointer; }
+  .category-list-col .list-group .list-group-item:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff; }
+
+.category-list,
+.product-list {
+  max-height: 665px;
+  overflow-y: auto; }
+  .category-list *,
+  .product-list * {
+    font-size: 0.9rem; }
+
+.product-head h3,
+.category-head h3 {
+  font-size: 1.5rem !important; }
+
+.product-table thead {
+  position: sticky;
+  top: -2px;
+  background-color: #fff; }
+
+.alertify-notifier .ajs-message.ajs-success,
+.alertify-notifier .ajs-message.ajs-error {
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 10px; }
+
+.wd-cart-head {
+  font-size: 3rem; }
+
+.wd-cart-link {
+  border-radius: 5px; }
+
+.wd-cart-text {
+  font-size: .9rem;
+  cursor: no-drop; }
+
+.wd-cart-menu-link {
+  text-align: center;
+  font-size: .9rem; }
 
 /*# sourceMappingURL=main.css.map */
