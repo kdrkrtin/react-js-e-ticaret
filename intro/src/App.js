@@ -8,9 +8,6 @@ import ProductList from "./ProductList";
 import CartList from './CartList';
 import NotFound from './NotFound';
 import FormDemo from './FormDemo';
-
-// Alertify JS Configuration 
-alertify.set('notifier', 'position', 'top-right');
 export default class App extends Component {
   state = { categoryCurrent: "", products: [], cart: [] };
   componentDidMount() {

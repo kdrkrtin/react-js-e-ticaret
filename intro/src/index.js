@@ -6,6 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "alertifyjs/build/css/alertify.min.css"
 import "./assets/css/main.css";
 import {BrowserRouter} from "react-router-dom"
+import alertify from "alertifyjs";
+
+// Alertify JS Configuration 
+alertify.set('notifier', 'position', 'top-right');
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
